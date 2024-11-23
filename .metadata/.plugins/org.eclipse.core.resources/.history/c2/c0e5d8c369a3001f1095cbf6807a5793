@@ -1,0 +1,8 @@
+package com.excelr;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/registration")
+public class Registration {
+
+}

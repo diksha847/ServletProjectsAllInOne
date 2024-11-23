@@ -1,0 +1,26 @@
+package demo;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Servlet extends HttpServlet {
+	
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		PrintWriter pw=resp.getWriter();
+		pw.println("<form>");
+		pw.println("Name:<input type=\"text\"><br><br>");
+		pw.println("Password:<input type=\"password\"><br><br>");
+		pw.println("<input type=\"submit\"><br><br>");
+
+		pw.println("<h1>Login page</h1>");
+	
+	}
+
+}

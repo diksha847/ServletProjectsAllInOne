@@ -1,0 +1,8 @@
+package redirect;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/submitform")
+public class MyServlet {
+
+}
